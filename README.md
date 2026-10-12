@@ -6,3 +6,7 @@ IEEE 1164 kütüphanesi kullanılarak temel lojik seviyeler modelledim. Entity a
 
 2-) 8-Bit Aritmetik Toplama ve Eşik Karşılaştırıcı 
 IEEE numeric_std kütüphanesi ve unsigned tip dönüşümleri kullanılarak 8-bitlik iki vektörün toplanmasını modelledim. Duyarlılık listeli process bloğu içinde donanımsal karşılaştırıcı tasarlanarak toplam değerinin 20 eşiğini aştığı durumlarda çıkış lojik 1 seviyesine çekilmiştir. Farklı toplama senaryoları ve sınır durumları tb_packages testbench dosyası ile QuestaSim ortamında simüle ederek doğruladım.
+
+3-) Modern IEEE Standardı ile 8-Bit Toplayıcı ve Eşik Karşılaştırıcı
+İkinci örnekte kullanılan eski Synopsys paketleri (std_logic_arith, std_logic_unsigned yerine endüstri standardı olan IEEE.NUMERIC_STD kütüphanesine geçiş yapılmıştır.
+
