@@ -1,0 +1,17 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity and2 is
+port ( 
+in_1 : in STD_LOGIC;
+in_2 : in STD_LOGIC;
+and_1 : out STD_LOGIC);
+end and2;
+
+architecture Behavioral of and2 is 
+
+begin 
+
+and_1 <= in_1 and in_2;
+
+end Behavioral;
