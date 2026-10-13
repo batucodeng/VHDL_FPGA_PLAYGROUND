@@ -15,6 +15,12 @@ Hassasiyet Listesi : process(clk, rst) kullanılarak bloğun sadece saat veya re
 Asenkron Reset:if (rst = '1') kontrolü en başa konularak, reset aktif olduğunda saat darbesi beklenmeksizin data_out anında lojik 0 seviyesine çekilir.
 Senkron Veri Yakalama:Devre normal çalışma modundayken rst = '0', giriş verisi yalnızca saatin yükselen kenarında rising_edge(clk) çıkışa aktarılır ve bir sonraki kenara kadar saklanır.
 Testbench Simülasyonu:Testbench içerisinde 50 MHz (20 ns periyot) osilatörü simüle eden bağımsız bir saat üreteci koşturulmuş; resetin ve saat kenarlarının veri aktarımına etkisi simüle edilmiştir.
-
 Simülasyon Dalga Formu
 FPGA_EXAMPLE_4_WAVE_PHO.png
+
+5-) Senkron 4-Bit Yukarı Sayaç
+Açıklama: numeric_std kütüphanesi ve unsigned veri tipi kullanılarak asenkron sıfırlama rst ve etkinleştirme en girişlerine sahip 4-bit senkron yukarı sayaç tasarlanmıştır.
+Aritmetik İşlemler: std_logic_vector üzerinde doğrudan toplama yapılamayacağı için tasarım içinde unsigned(3 downto 0) ara sinyali r_count tanımlanmış ve çıkışta tip dönüşümü std_logic_vector yapılmıştır.
+Taşma (Overflow): 4-bit sayacın alabileceği maksimum değer olan 15 1111 aşıldığında sistem taşma üreterek otomatik olarak 0 0000 değerine geri döner.
+Simülasyon Dalga Formu
+project_05_wave_pho.png
