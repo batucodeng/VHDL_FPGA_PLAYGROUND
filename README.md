@@ -25,10 +25,18 @@ Taşma (Overflow): 4-bit sayacın alabileceği maksimum değer olan 15 1111 aş�
 Simülasyon Dalga Formu
 project_05_wave_pho.png
 
-6. Parametrik Frekans Bolucu
+6-) Parametrik Frekans Bolucu
 Aciklama: Giris saat frekansini disaridan belirlenen bir bolme oranina gore yavaslatan generic tabanli saat bolucu devresi tasarlanmistir.
-Generic yapisi kullanilarak DIVISOR sabiti disaridan degistirilebilir sekilde tanimlanmistir.
-Asenkron reset sinyali ile saat beklenmeden sayac ve cikis sifirlanabilmektedir.
-
+Generic yapisi kullanilarak DIVISOR sabiti disaridan degistirilebilir sekilde tanimlanmistir. Asenkron reset sinyali ile saat beklenmeden sayac ve cikis sifirlanabilmektedir.
 Simulasyon Dalga Formu
 project_06_pho.png
+
+7-) Seri Girisli Paralel Cikisli Kaydirmali Kaydedici
+Aciklama: Seri gelen tek bitlik veriyi her saat kenarinda iceriye kaydirip 4-bitlik paralel cikis paketine donusturen SIPO (Serial-In Parallel-Out) kaydirmali kaydedici devresi tasarlanmistir.
+Onemli Noktalar ve Mimari Detaylar:
+Bit kaydirma islemi VHDL birlestirme operatoru kullanilarak r_shift <= r_shift(2 downto 0) & serial_in seklinde gerceklenmistir.
+shift_en girisi ile kaydirma islemi kontrol edilmis, izin verilmediginde son veri register icinde korunmustur.
+Asenkron reset hatti ile saat darbesi beklenmeksizin tum register icerigi sifirlanabilmektedir.
+Donanim, UART veya SPI gibi seri iletisim protokollerinin alici (RX) temel mantigini olusturmaktadir.
+Simulasyon Dalga Formu
+project_07_pho.png
