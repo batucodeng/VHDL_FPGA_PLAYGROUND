@@ -24,3 +24,11 @@ Aritmetik İşlemler: std_logic_vector üzerinde doğrudan toplama yapılamayaca
 Taşma (Overflow): 4-bit sayacın alabileceği maksimum değer olan 15 1111 aşıldığında sistem taşma üreterek otomatik olarak 0 0000 değerine geri döner.
 Simülasyon Dalga Formu
 project_05_wave_pho.png
+
+6. Parametrik Frekans Bolucu
+Aciklama: Giris saat frekansini disaridan belirlenen bir bolme oranina gore yavaslatan generic tabanli saat bolucu devresi tasarlanmistir.
+Generic yapisi kullanilarak DIVISOR sabiti disaridan degistirilebilir sekilde tanimlanmistir.
+Asenkron reset sinyali ile saat beklenmeden sayac ve cikis sifirlanabilmektedir.
+
+Simulasyon Dalga Formu
+project_06_pho.png
