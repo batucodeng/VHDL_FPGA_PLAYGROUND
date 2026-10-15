@@ -57,3 +57,11 @@ Sayactaki 1 saat cevrimlik gecikmeyi onlemek amaciyla karsilastirma islemi eszam
 Testbench uzerinde yuzde 20, yuzde 50, yuzde 80 ve yuzde 0 doluluk oranlari test edilerek dalga formu dogrulanmistir.
 Simulasyon Dalga Formu
 project_09_pho.png
+
+10-) 7-Segment Ekran Surucusu ve BCD Kod Cozucu
+Aciklama: 4-bitlik ikili (BCD) giris verisini ortak anotlu 7-segment gostergeye uygun segment cikislarina donusturen saf kombinezonsal kod cozucu (decoder) devresi tasarlanmistir.
+Ortak anot mimarisine uygun olarak aktif-dusuk (active-low) lojik kullanilmistir; segmentleri yakmak icin lojik '0', sondurmek icin lojik '1' cikisi verilmektedir.
+Segment dizilimi standart g-f-e-d-c-b-a formatinda tanimlanarak case-when yapisi ile tablo eslemesi yapilmistir.
+Devre saat darbesi veya saklayici gerektirmeyen tamamen kombinezonsal mantik kapilariyla gerceklenmistir.
+Simulasyon Dalga Formu
+7-seg-bcd-wave-pho.png
