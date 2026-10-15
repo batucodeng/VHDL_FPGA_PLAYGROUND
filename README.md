@@ -40,3 +40,11 @@ Asenkron reset hatti ile saat darbesi beklenmeksizin tum register icerigi sifirl
 Donanim, UART veya SPI gibi seri iletisim protokollerinin alici (RX) temel mantigini olusturmaktadir.
 Simulasyon Dalga Formu
 project_07_pho.png
+
+8-) Trafik Isigi Sonlu Durum Makinesi - FSM 
+Aciklama: Uc durumlu (RED, YELLOW, GREEN) trafik isigi kontrolunu gerceklestiren 2 surecli (two-process) sonlu durum makinesi (Finite State Machine - FSM) devresi tasarlanmistir.
+Onemli Noktalar ve Mimari Detaylar:
+Senkron surec (state_reg) durum register'ini saat kenarinda guncellerken, kombinezonsal surec (comb_logic) bir sonraki durumu ve cikis LED'lerini belirlemistir.
+Asenkron reset hatti test edilerek sistemin calisma esnasinda aninda guvenli baslangic durumu olan RED seviyesine donebildigi dogrulanmistir.
+Simulasyon Dalga Formu
+project_8_pho.png
