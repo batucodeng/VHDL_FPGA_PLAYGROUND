@@ -48,3 +48,12 @@ Senkron surec (state_reg) durum register'ini saat kenarinda guncellerken, kombin
 Asenkron reset hatti test edilerek sistemin calisma esnasinda aninda guvenli baslangic durumu olan RED seviyesine donebildigi dogrulanmistir.
 Simulasyon Dalga Formu
 project_8_pho.png
+
+9-) Parametrik PWM Kontrolcusu
+Aciklama: Giristen alinan doluluk orani (duty cycle) bilgisine gore periyodik kare dalga ureten parametrik darbe genislik modulasyonu (PWM) devresi tasarladım.
+Generic yapisi ile PERIOD degeri disaridan parametrik olarak belirlenebilir kilinmistir.
+Sayac devresi yalnizca saat vuruslarini sayacak sekilde sirali mantik olarak kurulmustur.
+Sayactaki 1 saat cevrimlik gecikmeyi onlemek amaciyla karsilastirma islemi eszamanli atama ile process disina alinarak gecikmesiz kombinezonsal cikis saglanmistir.
+Testbench uzerinde yuzde 20, yuzde 50, yuzde 80 ve yuzde 0 doluluk oranlari test edilerek dalga formu dogrulanmistir.
+Simulasyon Dalga Formu
+project_09_pho.png
